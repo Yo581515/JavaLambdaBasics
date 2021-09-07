@@ -28,11 +28,11 @@ public class Greeter {
 
 //			@Override
 //			public int add(int a, int b) {
-//				// TODO Auto-generated method stub
 //				return a+b;
 //			}
 		};
 		greeter.greet(innerClassGreeting);
+//		System.out.println((innerClassGreeting.add(5, 6)));
 		
 //		4)
 		greeter.greet(()-> System.out.println("Hello from Lambda! example 4"));
