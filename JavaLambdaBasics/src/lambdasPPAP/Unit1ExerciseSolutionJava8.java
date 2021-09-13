@@ -34,16 +34,9 @@ public class Unit1ExerciseSolutionJava8 {
 		}
 	}
 
-	private static void printAll(List<Person> people) {
-		for (Person p : people) {
-			System.out.println(p);
-		}
-	}
 
 	interface Condition {
-
 		boolean test(Person p);
-
 	}
 
 }
