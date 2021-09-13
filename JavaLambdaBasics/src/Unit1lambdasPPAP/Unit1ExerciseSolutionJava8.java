@@ -1,4 +1,4 @@
-package lambdasPPAP;
+package Unit1lambdasPPAP;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -25,7 +25,7 @@ public class Unit1ExerciseSolutionJava8 {
 		printConditionally(people, (p) -> true);
 
 		System.out.println();
-		printConditionally2(people, (p) -> p.getFirstName().startsWith("M"));
+		printConditionally(people, (p) -> p.getFirstName().startsWith("M"));
 
 	}
 
@@ -37,13 +37,7 @@ public class Unit1ExerciseSolutionJava8 {
 		}
 	}
 
-	private static void printConditionally2(List<Person> people, Predicate<Person> predicate) {
-		for (Person p : people) {
-			if (predicate.test(p)) {
-				System.out.println(p);
-			}
-		}
-	}
+
 
 	@FunctionalInterface
 	interface Condition {

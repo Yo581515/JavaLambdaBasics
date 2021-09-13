@@ -1,4 +1,4 @@
-package lambdasPPAP;
+package Unit1lambdasPPAP;
 
 @FunctionalInterface
 public interface Greeting {

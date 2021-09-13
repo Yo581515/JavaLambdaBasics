@@ -1,4 +1,4 @@
-package lambdasPPAP;
+package Unit1lambdasPPAP;
 
 public class Greeter {
 
