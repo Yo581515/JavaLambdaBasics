@@ -21,6 +21,9 @@ public class Unit1ExerciseSolutionJava8 {
 		System.out.println();
 		printConditionally(people, (p) -> p.getFirstName().startsWith("C"));
 
+		System.out.println();
+		printConditionally(people, (p) -> true);
+
 	}
 
 	private static void printConditionally(List<Person> people, Condition condition) {
