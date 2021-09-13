@@ -2,10 +2,7 @@ package lambdasPPAP;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
-
-import lambdasPPAP.Unit1ExerciseSolutionJava7.Condition;
 
 public class Unit1ExerciseSolutionJava8 {
 
