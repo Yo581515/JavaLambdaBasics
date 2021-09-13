@@ -13,7 +13,7 @@ public class Unit1ExerciseSolutionJava8 {
 				new Person("Mathew", "Arnold", 39));
 
 		Collections.sort(people, (p1, p2) -> p1.getLastName().compareTo(p2.getLastName()));
-		
+
 		System.out.println();
 		printConditionally(people, (p) -> p.getLastName().startsWith("C"));
 
@@ -33,7 +33,7 @@ public class Unit1ExerciseSolutionJava8 {
 		}
 	}
 
-
+	@FunctionalInterface
 	interface Condition {
 		boolean test(Person p);
 	}
