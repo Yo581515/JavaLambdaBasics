@@ -29,4 +29,9 @@ public class ThisReferenceExample {
 		thisReferenceExample.execute();
 	}
 
+	@Override
+	public String toString() {
+		return "This is the main ThisReferenceExample class instance";
+	}
+
 }
