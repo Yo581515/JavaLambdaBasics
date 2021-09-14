@@ -1,4 +1,4 @@
-package Unit2lambdasPPAP;
+package Unit3lambdasPPAP;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 
 import Unit1lambdasPPAP.Person;
 
-public class StandardFunctionallInterface {
+public class MethodReferencesExample2 {
 
 	public static void main(String[] args) {
 
@@ -16,15 +16,7 @@ public class StandardFunctionallInterface {
 				new Person("Mathew", "Arnold", 39));
 
 		System.out.println();
-		performConditionally(people, (p) -> true, (p) -> System.out.println(p));
-
-		System.out.println();
-		performConditionally(people, (p) -> p.getLastName().startsWith("C"), (p) -> System.out.println(p));
-
-		System.out.println();
-		performConditionally(people, (p) -> p.getFirstName().startsWith("C"),
-				(p) -> System.out.println(p.getFirstName()));
-
+		performConditionally(people, (p) -> true, System.out::println);// (p) -> method(p)
 	}
 
 	private static void performConditionally(List<Person> people, Predicate<Person> predicate,

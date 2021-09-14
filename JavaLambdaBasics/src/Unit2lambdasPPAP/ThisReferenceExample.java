@@ -19,13 +19,29 @@ public class ThisReferenceExample {
 	public static void main(String[] args) {
 
 		ThisReferenceExample thisReferenceExample = new ThisReferenceExample();
+		System.out.println(thisReferenceExample);
+		System.out.println();
 
+		thisReferenceExample.doProcess(10, new Process() {
+			@Override
+			public void process(int i) {
+				System.out.println("Value of i is " + i);
+				System.out.println(this);
+			}
+
+			@Override
+			public String toString() {
+				return "This is innerClass";
+			}
+		});
+		System.out.println();
+
+//		Error
 //		thisReferenceExample.doProcess(10, (i) -> {
 //			System.out.println("Value of i is " + i);
-////			System.out.println(this);
+//			System.out.println(this);
 //		});
 
-		System.out.println(thisReferenceExample);
 		thisReferenceExample.execute();
 	}
 
